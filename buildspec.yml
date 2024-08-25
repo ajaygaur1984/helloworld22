@@ -10,11 +10,11 @@ phases:
       - echo No action required
   build:
     commands:
-      - echo Build started on 'date'
+      - echo Build started on `date`
       - mvn install
     post_build:
       commands:
-        - echo Build completed on `date`  
+        - echo Build completed on `date`
 artifacts:
   type: zip
   files:
